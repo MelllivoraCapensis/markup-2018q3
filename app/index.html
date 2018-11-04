@@ -349,7 +349,7 @@
 			</div>
 			<div class="services-box-wrapper">
 				<div class="services-box">
-				<div class="services-box__item">
+				<a href="#" class="services-box__item">
 					<div class="services-box__item-logo
 					services-box__item-logo_fast">
 				    </div>
@@ -359,8 +359,8 @@
 					<p class="services-box__item-text">
 						Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.
 					</p>
-			    </div>
-				<div class="services-box__item">
+			    </a>
+				<a href="#" class="services-box__item">
 						<div class="services-box__item-logo
 						services-box__item-logo_cloud">
 					   </div>
@@ -370,8 +370,8 @@
 					<p class="services-box__item-text">
 						Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.
 					</p>
-				</div>
-					<div class="services-box__item">
+				</a>
+				<a href="#" class="services-box__item">
 						<div class="services-box__item-logo
 						services-box__item-logo_domain">
 					</div>
@@ -381,8 +381,8 @@
 					<p class="services-box__item-text">
 						Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.
 					</p>
-			   </div>
-				<div class="services-box__item">
+			   </a>
+				<a href="#" class="services-box__item">
 					<div class="services-box__item-logo
 					services-box__item-logo_support">
 					</div>
@@ -392,7 +392,7 @@
 					<p class="services-box__item-text">
 						Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.
 					</p>
-				</div>
+				</a>
 				</div>
 			</div>
 	    </main>
@@ -439,5 +439,17 @@
 		</div>
 	    </footer>
 	</div>
+<script>
+	var telephone=document.getElementsByClassName('footer-main__telephone')[0];
+	telephone.onclick=function(){
+	var number=prompt('Оставьте номер телефона и мы вам перезвоним!',
+		'Ваш телефон');
+    };
+	var mail=document.getElementsByClassName('footer-main__mail')[0];
+	mail.onclick=function(){
+	var mail_adress=prompt('Подпишитесь на наши обновления!',
+		'Ваша почта');
+	}
+</script>
 </body>
 </html>

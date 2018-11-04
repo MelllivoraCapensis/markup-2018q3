@@ -1,5 +1,7 @@
 .page{
+	min-width: 750px;
 	margin: 0;
+
 }
 *{
 	box-sizing: border-box;
@@ -29,17 +31,18 @@
 }
 .upper-box__logo{
     float:left;
-    width: 200px;
+    width: 100px;
     height: 50px;
     margin:24px 0 0 0;
     background: url('img/logo.png') no-repeat;
-    background-size:55%;
+    background-size:100%;
 }
 .upper-box__menu{
 	float:right;
 	display: flex;
 	justify-content: space-between;
 	width: 50%;
+	min-width: 270px;
 }
 .upper-box__menu-item{
 	padding: 27px 0 30px 0;
@@ -69,6 +72,12 @@
      text-align: center;
      text-transform: uppercase;
      color:white;
+}
+.slogan__title:hover,.slogan__text:hover{
+	transform: scale(1.2);
+	color:lightgray;
+	transition: transform .3s;
+	transition:color .5s;
 }
 .slogan__text{
 	margin: 10px auto;
@@ -233,9 +242,11 @@
 }
 .packages__plan{
 	position: relative;
-	width: 21%;
+	width: 200px;
+	min-width: 140px;
 	height: 470px;
 	margin-bottom: 30px;
+	margin-right: 20px;
 	background: white;
 	z-index: 10;
 }
@@ -256,7 +267,6 @@
     height: 640px;
     background: url('img/bg-package.png')  no-repeat  0 -220px;
     background-size:cover;
-    border: .1px solid transparent;
 }
 .packages-background:after{
 	display: block;
@@ -266,7 +276,7 @@
 	left:0;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(to bottom,rgba(0,0,0,0.6) 50%,white 50%),
+	background: linear-gradient(to bottom,rgba(0,0,0,0.6) 320px,white 320px),
 	repeating-linear-gradient(-45deg,rgba(0,0,0,0.2) 3px,transparent 7px);
 }
 .packages-wrapper{
@@ -523,7 +533,8 @@
 	background-size: 100%;
 }
 .about-us__name{
-	margin-bottom: 10px;
+	height: 25px;
+	margin-bottom: 8px;
 	text-align: center;
 	font-size: 14px;
 	font-family: Lato;
@@ -602,6 +613,7 @@
 }
 .slider__text{
 	width: 30%;
+	min-width: 400px;
 	margin-top: 40px;
 	margin-left: 10%;
 	margin-bottom: 0;
@@ -672,8 +684,11 @@
 	height: 285px;
 }
 .services-box__item{
+	display: block;
 	width: 20%;
 	min-width: 100px;
+	text-decoration:none;
+	color:black;
 }
 .services-box__item-logo{
 	width: 50px;
@@ -682,6 +697,7 @@
 	border-radius: 100%;
 }
 .services-box__item-title{
+	height: 25px;
 	text-align: center;
 	font-family: Lato;
 	font-size: 15px;
@@ -719,6 +735,7 @@
 }
 .upper-box__menu_location_footer{
 	width: 36%;
+	min-width: 270px;
 	text-transform: uppercase;
 }
 .upper-box__logo_location_footer{
@@ -737,14 +754,16 @@
 }
 .footer-main{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 75%;
 	margin: 50px auto;
 }
 .footer-main__description{
-	width: 40%;
-	min-width: 250px;
+	width: 250px;
 	padding-right: 50px;
+	margin-bottom: 40px;
+	border-right: 1px solid rgba(255,255,255,0.2);
 }
 .footer-main__description-text{
 	width:100%;
@@ -764,13 +783,18 @@
 	font-weight: bold;
 }
 .footer-main__menu{
-	width: 40%;
+	min-width: 250px;
+	max-width: 300px;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 40px;
+	padding-left: 20px;
+	border-right: 1px solid rgba(255,255,255,0.2);
 }
 .footer-main__menu-item{
 	position: relative;
-	width:50%;
+	width:40%;
 	min-width: 110px;
 	text-align: left;
 	color:#7f8c8d;
@@ -791,10 +815,12 @@
     left:-15px;
 }
 .footer-main__contacts{
-	width: 20%;
+    width: 150px;
+	padding-left: 25px;
 	font-family: Lato;
 	color:#7f8c8d;
 	font-size: 12px;
+	word-break: break-all;
 }
 .footer-main__telephone,
 .footer-main__mail,
@@ -821,4 +847,8 @@
 }
 .footer-main__telephone:before{
 	background-position: 0 -355px;
+}
+.footer-main__telephone:hover, .footer-main__mail:hover{
+	text-decoration:underline;
+	cursor: pointer;
 }
