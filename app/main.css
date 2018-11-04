@@ -265,7 +265,7 @@
 	position: relative;
     width: 100%;
     height: 640px;
-    border: .1px solid transparent;
+    border: .1px solid white;
     background: url('img/bg-package.png')  no-repeat  0 -220px;
     background-size:cover;
 }
